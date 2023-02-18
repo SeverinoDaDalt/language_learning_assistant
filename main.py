@@ -1,4 +1,7 @@
 from typing import Union, List
+import datetime
+
+USERNAME = "Severino"
 
 
 class Word:
@@ -84,14 +87,32 @@ class Dictionary:
         return wanted_words
 
 
+class Menu:
+    def __init__(self):
+        print("What would you like to do:")
+        print(" 1- Add a word to the dictionary.")
+        print(" 2- Remove a word from the dictionary.")
+        print(" 3- Search a word in the dictionary.")
+        print(" 4- Train.")
+        response = input(f"{USERNAME}:")
+
+
 class Session:
-    def __init__(self, dictionary: Dictionary, tags: Union[str, List[str]] = "all"):
-        if tags == "all":
-            self.session_words = dictionary.words
+    def __init__(self):
+        self.start = datetime.datetime.now()
+        self.interactions = []
+        print(f"NEW SESSION STARTED ({self.start})")
+
+    def write_session(self):
+        return NotImplementedError
+
+    def add_interaction(self, interaction: str, level: int = 0):
+        self.interactions.append((level, interaction))
 
 
 def main():
-    return NotImplementedError
+    session = Session()
+
 
 
 if __name__ == "__main__":
