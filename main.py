@@ -1,11 +1,12 @@
 from typing import Union, List
 
+
 class Word:
     def __init__(self,
                  id_: int,
                  pinyin_spelling: Union[str, List[str]],
                  spanish_spelling: Union[str, List[str]],
-                 tags: Union[str, List[str]]=None):
+                 tags: Union[str, List[str]] = None):
         self.id_ = id_
         self.pinyin_spelling = pinyin_spelling if type(pinyin_spelling) is list else [pinyin_spelling]
         self.spanish_spelling = spanish_spelling if type(spanish_spelling) is list else [spanish_spelling]
@@ -15,22 +16,22 @@ class Word:
         self.fails = 0
         self.consecutive = 0  # if positive, consecutive hits. If negative, consecutive fails
 
-    def add_pinyin_spelling(self, new_pinyin_spelling: Union[str, List[str]], replace: bool=False):
+    def add_pinyin_spelling(self, new_pinyin_spelling: Union[str, List[str]], replace: bool = False):
         if replace:
             self.pinyin_spelling = new_pinyin_spelling if type(new_pinyin_spelling) is list else [new_pinyin_spelling]
         else:
             self.pinyin_spelling.extend(new_pinyin_spelling if type(new_pinyin_spelling) is list
                                         else [new_pinyin_spelling])
 
-    def add_spanish_spelling(self, new_spanish_spelling: Union[str, List[str]], replace: bool=False):
+    def add_spanish_spelling(self, new_spanish_spelling: Union[str, List[str]], replace: bool = False):
         if replace:
             self.spanish_spelling = new_spanish_spelling if type(new_spanish_spelling) is list \
                 else [new_spanish_spelling]
         else:
-            self.spanish_spelling.extend(new_spanish_spelling if type(new_spanish_spelling) is list \
-                else [new_spanish_spelling])
+            self.spanish_spelling.extend(new_spanish_spelling if type(new_spanish_spelling) is list
+                                         else [new_spanish_spelling])
 
-    def add_tag(self, new_tag: Union[str, List[str]], replace: bool=False):
+    def add_tag(self, new_tag: Union[str, List[str]], replace: bool = False):
         if replace:
             self.tags = new_tag if new_tag is None or type(new_tag) is list else [new_tag]
         else:
@@ -60,7 +61,7 @@ class Dictionary:
     def add_word(self,
                  pinyin_spelling: Union[str, List[str]],
                  spanish_spelling: Union[str, List[str]],
-                 tags: Union[str, List[str]]=None):
+                 tags: Union[str, List[str]] = None):
         word = Word(self.first_available_id, pinyin_spelling, spanish_spelling, tags)
         self.first_available_id += 1
         self.words.append(word)
@@ -81,6 +82,12 @@ class Dictionary:
                 if tag in word.tags:
                     wanted_words.append(word)
         return wanted_words
+
+
+class Session:
+    def __init__(self, dictionary: Dictionary, tags: Union[str, List[str]] = "all"):
+        if tags == "all":
+            self.session_words = dictionary.words
 
 
 def main():
