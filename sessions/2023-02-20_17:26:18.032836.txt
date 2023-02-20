@@ -1,0 +1,16 @@
+Beginning of session 2023-02-20 17:26:18.032836
+	Start training.
+		Wrong translation (liú) of word id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve'] was given.
+		Fully correct translation for word id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos'].
+		Fully correct translation for word id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez'].
+		Fully correct translation for word id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien'].
+		Fully correct translation for word id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro'].
+		Fully correct translation for word id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco'].
+		Fully correct translation for word id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho'].
+		Wrong translation (liú) of word id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis'] was given.
+		Fully correct translation for word id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete'].
+		Fully correct translation for word id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres'].
+		Wrong translation (tī) of word id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno'] was given.
+		Correctly guessed 8 words out of 11.
+	Checked dictionary
+Session finished at 2023-02-20 17:34:00.968073
