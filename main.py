@@ -1,118 +1,122 @@
-from typing import Union, List
 import datetime
-
-USERNAME = "Severino"
-
-
-class Word:
-    def __init__(self,
-                 id_: int,
-                 pinyin_spelling: Union[str, List[str]],
-                 spanish_spelling: Union[str, List[str]],
-                 tags: Union[str, List[str]] = None):
-        self.id_ = id_
-        self.pinyin_spelling = pinyin_spelling if type(pinyin_spelling) is list else [pinyin_spelling]
-        self.spanish_spelling = spanish_spelling if type(spanish_spelling) is list else [spanish_spelling]
-        self.tags = tags if tags is None or type(tags) is list else [tags]
-        self.attempts = 0
-        self.hits = 0
-        self.fails = 0
-        self.consecutive = 0  # if positive, consecutive hits. If negative, consecutive fails
-
-    def add_pinyin_spelling(self, new_pinyin_spelling: Union[str, List[str]], replace: bool = False):
-        if replace:
-            self.pinyin_spelling = new_pinyin_spelling if type(new_pinyin_spelling) is list else [new_pinyin_spelling]
-        else:
-            self.pinyin_spelling.extend(new_pinyin_spelling if type(new_pinyin_spelling) is list
-                                        else [new_pinyin_spelling])
-
-    def add_spanish_spelling(self, new_spanish_spelling: Union[str, List[str]], replace: bool = False):
-        if replace:
-            self.spanish_spelling = new_spanish_spelling if type(new_spanish_spelling) is list \
-                else [new_spanish_spelling]
-        else:
-            self.spanish_spelling.extend(new_spanish_spelling if type(new_spanish_spelling) is list
-                                         else [new_spanish_spelling])
-
-    def add_tag(self, new_tag: Union[str, List[str]], replace: bool = False):
-        if replace:
-            self.tags = new_tag if new_tag is None or type(new_tag) is list else [new_tag]
-        else:
-            self.tags.extend(new_tag if new_tag is None or type(new_tag) is list else [new_tag])
-
-    def update_attempts(self, result: int):
-        self.attempts += 1
-        if result > 0:
-            self.hits += 1
-            if self.consecutive >= 0:
-                self.consecutive += 1
-            else:
-                self.consecutive = 1
-        elif result < 0:
-            self.fails += 1
-            if self.consecutive <= 0:
-                self.consecutive -= 1
-            else:
-                self.consecutive = -1
-
-
-class Dictionary:
-    def __init__(self, words: List[Word]):
-        self.words = words
-        self.first_available_id = 0
-
-    def add_word(self,
-                 pinyin_spelling: Union[str, List[str]],
-                 spanish_spelling: Union[str, List[str]],
-                 tags: Union[str, List[str]] = None):
-        word = Word(self.first_available_id, pinyin_spelling, spanish_spelling, tags)
-        self.first_available_id += 1
-        self.words.append(word)
-
-    def get_word_by_id(self, id_: int):
-        for word in self.words:
-            if word.id_ == id_:
-                return word
-
-    def remove_word_by_id(self, id_: int):
-        self.words.remove(self.get_word_by_id(id_))
-
-    def find_words_by_tag(self, tags: Union[str, List[str]]):
-        tags = tags if type(tags) is list else [tags]
-        wanted_words = []
-        for tag in tags:
-            for word in self.words:
-                if tag in word.tags:
-                    wanted_words.append(word)
-        return wanted_words
-
-
-class Menu:
-    def __init__(self):
-        print("What would you like to do:")
-        print(" 1- Add a word to the dictionary.")
-        print(" 2- Remove a word from the dictionary.")
-        print(" 3- Search a word in the dictionary.")
-        print(" 4- Train.")
-        response = input(f"{USERNAME}:")
+from words import Dictionary
+import os
+import pickle
+from config import SESSIONS_DIRECTORY, DICTIONARY
+from utils import ask_user, keyboard_adapter
+from training import exhaustive_training
 
 
 class Session:
     def __init__(self):
         self.start = datetime.datetime.now()
         self.interactions = []
-        print(f"NEW SESSION STARTED ({self.start})")
+        # Load dictionary
+        if os.path.exists(DICTIONARY):
+            with open(DICTIONARY, "rb") as f_dic:
+                self.dictionary = pickle.load(f_dic)
+        else:
+            prompt = f"The selected dictionary ({DICTIONARY}) does not exist yet. Do you want to initialize it? (y/n)"
+            response = ask_user(prompt, valid_responses=["y", "n"])
+            if response == "n":
+                return
+            self.dictionary = Dictionary([])
 
     def write_session(self):
-        return NotImplementedError
+        session_file = str(self.start).replace(" ", "_") + ".txt"
+        with open(os.path.join(SESSIONS_DIRECTORY, session_file), "w") as f_session:
+            for level, interaction in self.interactions:
+                f_session.write("\t"*level + interaction + "\n")
 
     def add_interaction(self, interaction: str, level: int = 0):
         self.interactions.append((level, interaction))
 
+    def run(self):
+        # todo: create functions for options in session
+        print(f"NEW SESSION STARTED ({self.start})")
+        self.add_interaction(f"Beginning of session {self.start}")
+        while True:
+            prompt = \
+"""
+\nWhat would you like to do:
+ 1- Add words to the dictionary.
+ 2- Remove a word from the dictionary.
+ 3- Show dictionary.
+ 4- Train.
+ 5- Exit.
+"""
+            response = ask_user(prompt, valid_responses=["1", "2", "3", "4", "5"])
+            if response == "5":
+                break
+            elif response == "1":
+                self.add_interaction(f"Adding words", 1)
+                prompt = "Which word do you want to add?\n Expected format: chinese_spelling1,...chinese_spellingN;" \
+                         "spanish_spelling1,...,spanish_spellingN;tag1,...,tagN.\n You can go on until you type 'exit'."
+                response = ask_user(prompt)
+                while response != "exit":
+                    aux = response.split(";")
+                    if len(aux) == 2:
+                        pinyin_spelling = keyboard_adapter(aux[0].split(","))
+                        spanish_spelling = keyboard_adapter(aux[1].split(","))
+                        word = self.dictionary.add_word(pinyin_spelling, spanish_spelling)
+                        self.add_interaction(f"{word}", 2)
+                    elif len(aux) == 3:
+                        pinyin_spelling = keyboard_adapter(aux[0].split(","))
+                        spanish_spelling = keyboard_adapter(aux[1].split(","))
+                        tags = aux[2].split(",")
+                        word = self.dictionary.add_word(pinyin_spelling, spanish_spelling, tags=tags)
+                        self.add_interaction(f"{word}", 2)
+                    else:
+                        print("Wrong format!")
+                        continue
+                    response = ask_user()
+                self.add_interaction(f"No more words", 2)
+            elif response == "2":
+                response = ask_user(f"What is the id of the word?")
+                try:
+                    response = int(response)
+                except Exception:
+                    print("The id must be an integer!")
+                    continue
+                word = self.dictionary.get_word_by_id(response)
+                if word is None:
+                    print("Word not found")
+                    continue
+                response = ask_user(f"Is this the word you want to delete? {word}. (y/n)", valid_responses=["y", "n"])
+                if response == "y":
+                    self.dictionary.remove_word_by_id(word.id_)
+                    self.add_interaction(f"Word removed: {word}", 1)
+                else:
+                    print("The word was not removed.")
+            elif response == "3":
+                print("These are the words in the dictionary:")
+                for word in self.dictionary.words:
+                    print(f" - {word}")
+                self.add_interaction(f"Checked dictionary", 1)
+            elif response == "4":
+                self.add_interaction(f"Start training.", 1)
+                new_interactions = exhaustive_training(self.dictionary.words)
+                for interaction, level in new_interactions:  # todo: instead of this update add_interaction func
+                    self.add_interaction(interaction, level)
+                print(f"Training session finished!")
+            else:
+                raise ValueError
+        print("Session ended!")
+        self.add_interaction(f"Session finished at {datetime.datetime.now()}")
+        response = ask_user("Do you want to save the session and all changes that were made to the dictionary? (y/n)",
+                            valid_responses=["y", "n"])
+        if response == "y":
+            print(f"Saving session ...")
+            self.write_session()
+            with open(DICTIONARY, "wb") as f_dic:
+                print("Saving dictionary ...")
+                pickle.dump(self.dictionary, f_dic)
+            print("All changes were saved!")
+
 
 def main():
     session = Session()
-
+    session.run()
 
 
 if __name__ == "__main__":

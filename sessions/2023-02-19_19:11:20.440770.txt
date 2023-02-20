@@ -1,0 +1,29 @@
+Beginning of session 2023-02-19 19:11:20.440770
+	Adding words
+		id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno']
+		id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos']
+		id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres']
+		id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro']
+		id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco']
+		id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis']
+		id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete']
+		id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho']
+		id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve']
+		id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez']
+		id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien']
+		No more words
+	Checked dictionary
+	Start training.
+		Fully correct translation for word id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos'].
+		Fully correct translation for word id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho'].
+		Fully correct translation for word id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro'].
+		Fully correct translation for word id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien'].
+		Fully correct translation for word id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno'].
+		Fully correct translation for word id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete'].
+		Fully correct translation for word id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres'].
+		Fully correct translation for word id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve'].
+		Fully correct translation for word id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis'].
+		Fully correct translation for word id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco'].
+		Fully correct translation for word id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez'].
+		Correctly guessed 11 words out of 11.
+Session finished at 2023-02-19 19:15:18.970955
