@@ -1,0 +1,25 @@
+Beginning of session 2023-02-21 18:22:54.350956
+	Checked dictionary
+	Adding words
+		id_: 12, pinyin_spelling: ['tóu'], spanish_spelling: ['cabeza'], tags: ['cuerpo']
+		id_: 13, pinyin_spelling: ['mù', 'yǎn jīng'], spanish_spelling: ['ojo'], tags: ['cuerpo']
+		id_: 14, pinyin_spelling: ['kǒu', 'zuǐ ba'], spanish_spelling: ['boca'], tags: ['cuerpo']
+		id_: 15, pinyin_spelling: ['ěr', 'ěr duo'], spanish_spelling: ['oreja'], tags: ['cuerpo']
+		id_: 16, pinyin_spelling: ['shǒu'], spanish_spelling: ['mano'], tags: ['cuerpo']
+		id_: 17, pinyin_spelling: ['zú', 'jiǎo'], spanish_spelling: ['pie'], tags: ['cuerpo']
+		id_: 18, pinyin_spelling: ['dà'], spanish_spelling: ['grande'], tags: None
+		id_: 19, pinyin_spelling: ['xiǎo'], spanish_spelling: ['pequeño'], tags: None
+		id_: 20, pinyin_spelling: ['duō'], spanish_spelling: ['mucho'], tags: None
+		id_: 21, pinyin_spelling: ['shǎo'], spanish_spelling: ['poco'], tags: None
+		id_: 22, pinyin_spelling: ['rì ', 'tài yáng'], spanish_spelling: ['sol'], tags: None
+		id_: 23, pinyin_spelling: ['yuè', 'yuè liang'], spanish_spelling: ['luna'], tags: None
+		id_: 24, pinyin_spelling: ['shí'], spanish_spelling: ['piedra'], tags: None
+		id_: 25, pinyin_spelling: ['tián'], spanish_spelling: ['campo'], tags: None
+		id_: 26, pinyin_spelling: ['shuǐ'], spanish_spelling: ['agua'], tags: None
+		id_: 27, pinyin_spelling: ['huǒ'], spanish_spelling: ['fuego'], tags: None
+		id_: 28, pinyin_spelling: ['tǔ'], spanish_spelling: ['tierra'], tags: None
+		id_: 29, pinyin_spelling: ['mù'], spanish_spelling: ['madera'], tags: None
+		id_: 30, pinyin_spelling: ['hé'], spanish_spelling: ['planta de arroz'], tags: None
+		No more words
+	Checked dictionary
+Session finished at 2023-02-21 18:44:45.051906

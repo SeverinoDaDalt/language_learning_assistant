@@ -1,0 +1,21 @@
+Beginning of session 2023-02-20 23:03:27.388411
+	Adding words
+		id_: 11, pinyin_spelling: ['rén'], spanish_spelling: ['persona']
+		No more words
+	Checked dictionary
+	Start training.
+		Fully correct translation for word id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez'].
+		Fully correct translation for word id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres'].
+		Fully correct translation for word id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos'].
+		Fully correct translation for word id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro'].
+		Fully correct translation for word id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco'].
+		Fully correct translation for word id_: 11, pinyin_spelling: ['rén'], spanish_spelling: ['persona'].
+		Fully correct translation for word id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho'].
+		Wrong translation (liú) of word id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve'] was given.
+		Help was required with the translation of word id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete'].
+		Fully correct translation for word id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien'].
+		Fully correct translation for word id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno'].
+		Wrong translation (liú) of word id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis'] was given.
+		Correctly guessed 9 words out of 12.
+	Checked dictionary
+Session finished at 2023-02-20 23:08:50.936120

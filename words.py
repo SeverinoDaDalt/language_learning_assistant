@@ -17,7 +17,8 @@ class Word:
         self.consecutive = 0  # if positive, consecutive hits. If negative, consecutive fails
 
     def __repr__(self):
-        return f"id_: {self.id_}, pinyin_spelling: {self.pinyin_spelling}, spanish_spelling: {self.spanish_spelling}"
+        return f"id_: {self.id_}, pinyin_spelling: {self.pinyin_spelling}, spanish_spelling: {self.spanish_spelling}," \
+               f" tags: {self.tags}"
 
     def represent_all_stats(self):
         return f"id_: {self.id_}, pinyin_spelling: {self.pinyin_spelling}, " \
