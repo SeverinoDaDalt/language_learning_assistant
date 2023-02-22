@@ -1,0 +1,39 @@
+Beginning of session 2023-02-22 23:30:20.143511
+	Checked dictionary
+	Start training.
+		Fully correct translation for word id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco'], tags: ['numeros'].
+		Wrong translation (zuè bai) of word id_: 14, pinyin_spelling: ['kǒu', 'zuǐ ba'], spanish_spelling: ['boca'], tags: ['cuerpo'] was given.
+		Fully correct translation for word id_: 31, pinyin_spelling: ['gè'], spanish_spelling: ['unidad'], tags: None.
+		Fully correct translation for word id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez'], tags: ['numeros'].
+		Fully correct translation for word id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve'], tags: ['numeros'].
+		Fully correct translation for word id_: 19, pinyin_spelling: ['xiǎo'], spanish_spelling: ['pequeño'], tags: None.
+		Fully correct translation for word id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis'], tags: ['numeros'].
+		Fully correct translation for word id_: 12, pinyin_spelling: ['tóu'], spanish_spelling: ['cabeza'], tags: ['cuerpo'].
+		Fully correct translation for word id_: 25, pinyin_spelling: ['tián'], spanish_spelling: ['campo'], tags: None.
+		Fully correct translation for word id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho'], tags: ['numeros'].
+		Wrong translation (zaí jian) of word id_: 13, pinyin_spelling: ['mù', 'yǎn jīng'], spanish_spelling: ['ojo'], tags: ['cuerpo'] was given after correctly guessing {'mù'}.
+		Wrong translation (mǔ) of word id_: 29, pinyin_spelling: ['mù'], spanish_spelling: ['madera'], tags: None was given.
+		Fully correct translation for word id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete'], tags: ['numeros'].
+		Wrong translation (tà) of word id_: 18, pinyin_spelling: ['dà'], spanish_spelling: ['grande'], tags: None was given.
+		Fully correct translation for word id_: 28, pinyin_spelling: ['tǔ'], spanish_spelling: ['tierra'], tags: None.
+		Fully correct translation for word id_: 15, pinyin_spelling: ['ěr', 'ěr duo'], spanish_spelling: ['oreja'], tags: ['cuerpo'].
+		Wrong translation (ér) of word id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos'], tags: ['numeros'] was given.
+		Fully correct translation for word id_: 30, pinyin_spelling: ['hé'], spanish_spelling: ['planta de arroz'], tags: None.
+		Fully correct translation for word id_: 20, pinyin_spelling: ['duō'], spanish_spelling: ['mucho'], tags: None.
+		Wrong translation (rù) of word id_: 17, pinyin_spelling: ['zú', 'jiǎo'], spanish_spelling: ['pie'], tags: ['cuerpo'] was given after correctly guessing {'jiǎo'}.
+		Fully correct translation for word id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres'], tags: ['numeros'].
+		Wrong translation (shuáng) of word id_: 32, pinyin_spelling: ['shuāng'], spanish_spelling: ['par'], tags: None was given.
+		Fully correct translation for word id_: 24, pinyin_spelling: ['shí'], spanish_spelling: ['piedra'], tags: None.
+		Wrong translation (shǎo) of word id_: 16, pinyin_spelling: ['shǒu'], spanish_spelling: ['mano'], tags: ['cuerpo'] was given.
+		Wrong translation (lué) of word id_: 23, pinyin_spelling: ['yuè', 'yuè liang'], spanish_spelling: ['luna'], tags: None was given.
+		Wrong translation (shuí) of word id_: 26, pinyin_spelling: ['shuǐ'], spanish_spelling: ['agua'], tags: None was given.
+		Fully correct translation for word id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno'], tags: ['numeros'].
+		Help was required with the translation of word id_: 27, pinyin_spelling: ['huǒ'], spanish_spelling: ['fuego'], tags: None.
+		Fully correct translation for word id_: 21, pinyin_spelling: ['shǎo'], spanish_spelling: ['poco'], tags: None.
+		Fully correct translation for word id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien'], tags: ['numeros'].
+		Fully correct translation for word id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro'], tags: ['numeros'].
+		Fully correct translation for word id_: 11, pinyin_spelling: ['rén'], spanish_spelling: ['persona'], tags: ['cuerpo'].
+		Help was required with the translation of word id_: 22, pinyin_spelling: ['rì ', 'tài yáng'], spanish_spelling: ['sol'], tags: None.
+		Correctly guessed 21 words out of 33.
+	Checked dictionary
+Session finished at 2023-02-22 23:44:21.763985
