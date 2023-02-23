@@ -27,13 +27,25 @@ def keyboard_adapter(seveyin_word: Union[str, List[str]]):
     return pinyin_words if len(pinyin_words) > 1 else pinyin_words[0]
 
 
+def read_from_user(prompt: str = None, strip=True):
+    response = None
+    while response is None:
+        try:
+            response = input(prompt)
+            if strip:
+                response = response.strip()
+            return response
+        except UnicodeDecodeError:
+            print(f"ERROR (UnicodeDecodeError). Try typing again carefully.")
+
+
 def ask_user(prompt: str = None, valid_responses: List = None):
     if prompt is not None:
         print(prompt)
-    response = input(f"{USERNAME}: ").strip()
+    response = read_from_user(f"{USERNAME}: ")
     if not valid_responses:
         return response
     while response not in valid_responses:
         print(f"Invalid option. Response must be one of {valid_responses}. Try again.")
-        response = input(f"{USERNAME}: ")
+        response = read_from_user(f"{USERNAME}: ")
     return response

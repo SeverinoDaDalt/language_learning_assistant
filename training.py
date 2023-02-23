@@ -57,14 +57,26 @@ def ask_spanish_translation(word: Word, reverse: bool = False):
 def exhaustive_training(words: List[Word]):
     interactions = []
     random.shuffle(words)
-    results = []
+    wrong = []
+    helped = []
     for word in words:
         interaction, result = ask_spanish_translation(word)
         interactions.append(interaction)
-        results.append(result)
-    correct = results.count("correct")
-    wrong = results.count("helped") + results.count("wrong")
-    prompt = f"Correctly guessed {correct} words out of {wrong + correct}."
+        if result == "wrong":
+            wrong.append(word)
+        elif result == "helped":
+            helped.append(word)
+    prompt = f"Correctly guessed {len(words)-len(wrong)-len(helped)} words out of {len(words)}."
     print(prompt)
+    if not wrong + helped:
+        print("PERFECT SCORE!")
+    if wrong:
+        print(f"You missed the following words:")
+        for word in wrong:
+            print(f" - {word}")
+    if helped:
+        print(f"You asked for help for the following words:")
+        for word in helped:
+            print(f" - {word}")
     interactions.append((prompt, 2))
     return interactions
