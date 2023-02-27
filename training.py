@@ -2,6 +2,7 @@ import random
 from words import Word
 from utils import ask_user, keyboard_adapter
 from typing import List
+import prompts
 
 
 def ask_spanish_translation(word: Word, reverse: bool = False):
@@ -17,11 +18,10 @@ def ask_spanish_translation(word: Word, reverse: bool = False):
         origin_spelling = random.choice(word.spanish_spelling)
         target_language = "pinyin"
         target_spellings = set(word.pinyin_spelling.copy())
-    prompt = f"Translate the following word from {origin_language} to {target_language}: {origin_spelling}"
+    prompt = prompts.ASK_TRANSLATION(origin_language, target_language, origin_spelling)
     response = None  # just to make pycharm happy
     while target_spellings != guessed_target_spellings and correct_result:
         response = keyboard_adapter(ask_user(prompt))
-        # todo: check if already given
         if response in guessed_target_spellings:
             print("Translation already given, try another one.")
         elif response not in target_spellings:
@@ -33,8 +33,7 @@ def ask_spanish_translation(word: Word, reverse: bool = False):
         else:
             guessed_target_spellings.add(response)
             print("Right answer!")
-        prompt = f"There are more translations for the word {origin_spelling}. " + \
-                 (f"(you already guessed {guessed_target_spellings})" if guessed_target_spellings else "")
+        prompt = prompts.ASK_ANOTHER_TRANSLATION(origin_spelling, guessed_target_spellings)
     if correct_result:
         result = "correct"
         word.update_attempts(1)

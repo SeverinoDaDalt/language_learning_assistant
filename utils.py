@@ -16,6 +16,10 @@ seveyin_settings = {
 }
 
 
+def strip_list(list_: List[str]):
+    return [string_.strip() for string_ in list_]
+
+
 def keyboard_adapter(seveyin_word: Union[str, List[str]]):
     seveyin_words = seveyin_word if type(seveyin_word) is list else [seveyin_word]
     pinyin_words = []
