@@ -32,7 +32,7 @@ class Session:
                 f_session.write("\t"*level + interaction + "\n")
 
     def add_interaction(self, interactions: Union[str, List[str]], level: int = 0):
-        if type(interactions) is List:
+        if type(interactions) is list:
             for interaction, new_level in interactions:
                 self.interactions.append((new_level, interaction))
         else:

@@ -16,7 +16,7 @@ You can go on until you type 'exit'."""
 SEARCH_WORD = f"What is the id of the word?"
 CONFIRM_REMOVE = lambda word: f"Is this the word you want to delete? {word}. (y/n)"
 
-DEBUG_MODE_ASK_DESCRIPTION = "Do you want to leave a description of what you have done?"
+DEBUG_MODE_ASK_DESCRIPTION = "Do you want to leave a description of what you have done? (y/n)"
 DEBUG_MODE_DESCRIPTION = "Please, do so down below."
 
 SAVE_SESSION = "Do you want to save the session and all changes that were made to the dictionary? (y/n)"
