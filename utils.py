@@ -21,14 +21,15 @@ def strip_list(list_: List[str]):
 
 
 def keyboard_adapter(seveyin_word: Union[str, List[str]]):
-    seveyin_words = seveyin_word if type(seveyin_word) is list else [seveyin_word]
+    as_list = type(seveyin_word) is list
+    seveyin_words = seveyin_word if as_list else [seveyin_word]
     pinyin_words = []
     for seveyin_word in seveyin_words:
         pinyin_word = seveyin_word
         for seveyin_character, pinyin_character in seveyin_settings.items():
             pinyin_word = pinyin_word.replace(seveyin_character, pinyin_character)
         pinyin_words.append(pinyin_word)
-    return pinyin_words if len(pinyin_words) > 1 else pinyin_words[0]
+    return pinyin_words if as_list else pinyin_words[0]
 
 
 def read_from_user(prompt: str = None, strip=True):

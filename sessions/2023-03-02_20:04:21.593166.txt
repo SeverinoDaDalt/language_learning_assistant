@@ -1,0 +1,15 @@
+Beginning of session 2023-03-02 20:04:21.593166
+	Adding words
+		id_: 33, pinyin_spelling: ['yǒu'], spanish_spelling: ['tener'], tags: None
+		id_: 34, pinyin_spelling: ['kǒu rén'], spanish_spelling: ['familia'], tags: None
+		id_: 35, pinyin_spelling: ['xiǎo rén'], spanish_spelling: ['persona ruin'], tags: None
+		id_: 36, pinyin_spelling: ['rén rén'], spanish_spelling: ['mucha gente'], tags: None
+		id_: 37, pinyin_spelling: ['shān'], spanish_spelling: ['montaña'], tags: None
+		id_: 38, pinyin_spelling: ['lǐ bài'], spanish_spelling: ['semana'], tags: None
+		id_: 39, pinyin_spelling: ['rì'], spanish_spelling: ['día'], tags: None
+		id_: 40, pinyin_spelling: ['rì yuè', 'rì qī'], spanish_spelling: ['fecha'], tags: None
+		id_: 41, pinyin_spelling: ['yuè'], spanish_spelling: ['mes'], tags: None
+		id_: 42, pinyin_spelling: ['xīng'], spanish_spelling: ['estrella'], tags: None
+		id_: 43, pinyin_spelling: ['tiān'], spanish_spelling: ['cielo'], tags: None
+		No more words
+Session finished at 2023-03-02 20:11:57.463832
