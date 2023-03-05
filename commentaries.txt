@@ -3,7 +3,7 @@ Fijate en que:
  - "ko/vu rén" significa "familia"
  - después del numero (sì) no hay "gè" (unidad)
 
-Para decir un numero de la semana se usa: "lì bài + {numero o tia/-n}" o "xi/-ng qi/- + {numero o tia/-n}":
+Para decir un día de la semana se usa: "lì bài + {numero o tia/-n}" o "xi/-ng qi/- + {numero o tia/-n}":
  - lì bài yi/- (or xi/-ng qi/- yi/-)
  - lì bài èr (or xi/-ng qi/- èr)
  - lì bài sa/-n (or xi/-ng qi/- sa/-n)
@@ -11,11 +11,9 @@ Para decir un numero de la semana se usa: "lì bài + {numero o tia/-n}" o "xi/-
  - lì bài wu/v (or xi/-ng qi/- wu/v)
  - lì bài liù (or xi/-ng qi/- liù)
  - lì bài tia/-n (or xi/-ng qi/- tia/-n)
-
 Algo parecido pasa con los meses. Esta vez la formula es "{numero} + yuè"
 
 Las palabras "shí" (roca) y "mù" (madera) por si solas hacen referencia al respectivo elemento ("roca" y "madera como
 elementos"). Para hacer referencia a la cosa en si ("una roca" o "un tocón de madera") hay que añadir "tóu":
  - shí tóu
  - mù tóu
-

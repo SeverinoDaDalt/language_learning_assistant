@@ -1,0 +1,50 @@
+Beginning of session 2023-03-05 12:39:23.378194
+	Start training.
+		Fully correct translation for word id_: 61, pinyin_spelling: ['shí yī yuè'], spanish_spelling: ['noviembre'], tags: ['mes'].
+		Fully correct translation for word id_: 19, pinyin_spelling: ['xiǎo'], spanish_spelling: ['pequeño'], tags: None.
+		Fully correct translation for word id_: 4, pinyin_spelling: ['wǔ'], spanish_spelling: ['cinco'], tags: ['numeros'].
+		Fully correct translation for word id_: 5, pinyin_spelling: ['liù'], spanish_spelling: ['seis'], tags: ['numeros'].
+		Wrong translation (zuú) of word id_: 17, pinyin_spelling: ['zú', 'jiǎo'], spanish_spelling: ['pie'], tags: ['cuerpo'] was given.
+		Fully correct translation for word id_: 44, pinyin_spelling: ['lǐ bài yī', 'xīng qī yī'], spanish_spelling: ['lunes'], tags: ['día de la semana'].
+		Fully correct translation for word id_: 3, pinyin_spelling: ['sì'], spanish_spelling: ['cuatro'], tags: ['numeros'].
+		Help was required with the translation of word id_: 40, pinyin_spelling: ['rì yuè', 'rì qī'], spanish_spelling: ['fecha'], tags: None after correctly guessing {'rì yuè'}.
+		Fully correct translation for word id_: 9, pinyin_spelling: ['shí'], spanish_spelling: ['diez'], tags: ['numeros'].
+		Fully correct translation for word id_: 21, pinyin_spelling: ['shǎo'], spanish_spelling: ['poco'], tags: None.
+		Wrong translation (rèn) of word id_: 11, pinyin_spelling: ['rén'], spanish_spelling: ['persona'], tags: ['cuerpo'] was given.
+		Fully correct translation for word id_: 24, pinyin_spelling: ['shí'], spanish_spelling: ['piedra'], tags: None.
+		Help was required with the translation of word id_: 22, pinyin_spelling: ['rì', 'tài yáng'], spanish_spelling: ['sol'], tags: None after correctly guessing {'rì'}.
+		Fully correct translation for word id_: 31, pinyin_spelling: ['gè'], spanish_spelling: ['unidad'], tags: None.
+		Fully correct translation for word id_: 16, pinyin_spelling: ['shǒu'], spanish_spelling: ['mano'], tags: ['cuerpo'].
+		Fully correct translation for word id_: 30, pinyin_spelling: ['hé'], spanish_spelling: ['planta de arroz'], tags: None.
+		Wrong translation (tóu rén) of word id_: 34, pinyin_spelling: ['kǒu rén'], spanish_spelling: ['familia'], tags: None was given.
+		Fully correct translation for word id_: 7, pinyin_spelling: ['bā'], spanish_spelling: ['ocho'], tags: ['numeros'].
+		Fully correct translation for word id_: 28, pinyin_spelling: ['tǔ'], spanish_spelling: ['tierra'], tags: None.
+		Fully correct translation for word id_: 10, pinyin_spelling: ['bǎi'], spanish_spelling: ['cien'], tags: ['numeros'].
+		Wrong translation (ěr tuo) of word id_: 15, pinyin_spelling: ['ěr', 'ěr duo'], spanish_spelling: ['oreja'], tags: ['cuerpo'] was given after correctly guessing {'ěr'}.
+		Wrong translation (tǎi jīng) of word id_: 13, pinyin_spelling: ['mù', 'yǎn jīng'], spanish_spelling: ['ojo'], tags: ['cuerpo'] was given after correctly guessing {'mù'}.
+		Fully correct translation for word id_: 2, pinyin_spelling: ['sān'], spanish_spelling: ['tres'], tags: ['numeros'].
+		Fully correct translation for word id_: 8, pinyin_spelling: ['jiǔ'], spanish_spelling: ['nueve'], tags: ['numeros'].
+		Fully correct translation for word id_: 1, pinyin_spelling: ['èr'], spanish_spelling: ['dos'], tags: ['numeros'].
+		Fully correct translation for word id_: 36, pinyin_spelling: ['rén rén'], spanish_spelling: ['mucha gente'], tags: None.
+		Wrong translation (hòu) of word id_: 27, pinyin_spelling: ['huǒ'], spanish_spelling: ['fuego'], tags: None was given.
+		Wrong translation (zuè ba) of word id_: 14, pinyin_spelling: ['kǒu', 'zuǐ ba'], spanish_spelling: ['boca'], tags: ['cuerpo'] was given.
+		Wrong translation (xi/ng) of word id_: 43, pinyin_spelling: ['tiān'], spanish_spelling: ['cielo'], tags: None was given.
+		Fully correct translation for word id_: 25, pinyin_spelling: ['tián'], spanish_spelling: ['campo'], tags: None.
+		Fully correct translation for word id_: 6, pinyin_spelling: ['qī'], spanish_spelling: ['siete'], tags: ['numeros'].
+		Fully correct translation for word id_: 0, pinyin_spelling: ['yī'], spanish_spelling: ['uno'], tags: ['numeros'].
+		Fully correct translation for word id_: 41, pinyin_spelling: ['yuè'], spanish_spelling: ['mes'], tags: None.
+		Fully correct translation for word id_: 20, pinyin_spelling: ['duō'], spanish_spelling: ['mucho'], tags: None.
+		Fully correct translation for word id_: 18, pinyin_spelling: ['dà'], spanish_spelling: ['grande'], tags: None.
+		Fully correct translation for word id_: 32, pinyin_spelling: ['shuāng'], spanish_spelling: ['par'], tags: None.
+		Wrong translation (shǎo rén) of word id_: 35, pinyin_spelling: ['xiǎo rén'], spanish_spelling: ['persona ruin'], tags: None was given.
+		Help was required with the translation of word id_: 33, pinyin_spelling: ['yǒu'], spanish_spelling: ['tener'], tags: None.
+		Fully correct translation for word id_: 26, pinyin_spelling: ['shuǐ'], spanish_spelling: ['agua'], tags: None.
+		Wrong translation (xi/ng[D) of word id_: 38, pinyin_spelling: ['lǐ bài'], spanish_spelling: ['semana'], tags: None was given.
+		Fully correct translation for word id_: 42, pinyin_spelling: ['xīng'], spanish_spelling: ['estrella'], tags: None.
+		Fully correct translation for word id_: 23, pinyin_spelling: ['yuè', 'yuè liang'], spanish_spelling: ['luna'], tags: None.
+		Help was required with the translation of word id_: 37, pinyin_spelling: ['shān'], spanish_spelling: ['montaña'], tags: None.
+		Fully correct translation for word id_: 39, pinyin_spelling: ['rì'], spanish_spelling: ['día'], tags: None.
+		Fully correct translation for word id_: 12, pinyin_spelling: ['tóu'], spanish_spelling: ['cabeza'], tags: ['cuerpo'].
+		Fully correct translation for word id_: 29, pinyin_spelling: ['mù'], spanish_spelling: ['madera'], tags: None.
+		Correctly guessed 49 words out of 63.
+Session finished at 2023-03-05 12:58:12.989601

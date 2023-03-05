@@ -53,18 +53,50 @@ def ask_spanish_translation(word: Word, reverse: bool = False):
     return (interaction, 2), result
 
 
-def exhaustive_training(words: List[Word]):
+def random_commentary(commentaries, probability=0.1):
+    if commentaries and random.random() < probability:
+        return random.choice(commentaries)
+    return None
+
+
+def exhaustive_training(words: List[Word], commentaries: List[str]):
+    # training parameters
+    do_shuffle = True
+    commentaries_probability = 0.1
+    repetitive_tags = {"día de la semana", "mes"}
+    # begin training
+    if do_shuffle:
+        random.shuffle(words)
     interactions = []
-    random.shuffle(words)
     wrong = []
     helped = []
+    repeated_tags = set()
     for word in words:
+        # check if word should be skipped
+        repeated = False
+        possible_repeated_tags = set()
+        if word.tags:
+            for tag in word.tags:
+                if tag in repetitive_tags:
+                    if tag in repeated_tags:
+                        repeated = True
+                        break
+                    possible_repeated_tags.add(tag)
+        if repeated:
+            continue
+        repeated_tags = repeated_tags | possible_repeated_tags
+        # ask word
         interaction, result = ask_spanish_translation(word)
         interactions.append(interaction)
         if result == "wrong":
             wrong.append(word)
         elif result == "helped":
             helped.append(word)
+        commentary = random_commentary(commentaries, probability=commentaries_probability)
+        if commentary is not None:
+            print(f"\nQUICK NOTE:\n{commentary}\n")
+            commentaries.remove(commentary)
+    # resume
     prompt = f"Correctly guessed {len(words)-len(wrong)-len(helped)} words out of {len(words)}."
     print(prompt)
     if not wrong + helped:
@@ -77,5 +109,6 @@ def exhaustive_training(words: List[Word]):
         print(f"You asked for help for the following words:")
         for word in helped:
             print(f" - {word}")
+    # return progress
     interactions.append((prompt, 2))
     return interactions

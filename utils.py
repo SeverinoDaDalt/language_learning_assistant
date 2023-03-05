@@ -54,3 +54,11 @@ def ask_user(prompt: str = None, valid_responses: List = None):
         print(f"Invalid option. Response must be one of {valid_responses}. Try again.")
         response = read_from_user(f"{USERNAME}: ")
     return response
+
+
+def load_commentaries():
+    with open("commentaries.txt", "r") as i_f:
+        commentaries = i_f.read()
+        commentaries = commentaries.split("\n\n")
+        commentaries = [commentary.strip() for commentary in commentaries if commentary.strip()]
+    return keyboard_adapter(commentaries)

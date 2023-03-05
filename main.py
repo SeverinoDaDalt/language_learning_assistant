@@ -4,7 +4,7 @@ from words import Dictionary
 import os
 import pickle
 from config import SESSIONS_DIRECTORY, DICTIONARY
-from utils import ask_user, keyboard_adapter, strip_list
+from utils import ask_user, keyboard_adapter, strip_list, load_commentaries
 from training import exhaustive_training
 import prompts
 from typing import List, Union
@@ -57,7 +57,6 @@ class Session:
                 self.add_interaction(f"{word}", 2)
             else:
                 print("Wrong format!")
-                continue
             response = ask_user()
         self.add_interaction(f"No more words", 2)
 
@@ -87,7 +86,8 @@ class Session:
 
     def train(self):
         self.add_interaction(f"Start training.", 1)
-        new_interactions = exhaustive_training(self.dictionary.words)
+        commentaries = load_commentaries()
+        new_interactions = exhaustive_training(self.dictionary.words, commentaries)
         self.add_interaction(new_interactions)
         print(f"Training session finished!")
 

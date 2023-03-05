@@ -1,0 +1,24 @@
+Beginning of session 2023-03-05 12:19:39.282480
+	Checked dictionary
+	Adding words
+		id_: 44, pinyin_spelling: ['lǐ bài yī', 'xīng qī yī'], spanish_spelling: ['lunes'], tags: ['día de la semana']
+		id_: 45, pinyin_spelling: ['lǐ bài èr', 'xīng qī èr'], spanish_spelling: ['martes'], tags: ['día de la semana']
+		id_: 46, pinyin_spelling: ['lǐ bài sān', 'xīng qī sān'], spanish_spelling: ['miércoles'], tags: ['día de la semana']
+		id_: 47, pinyin_spelling: ['lǐ bài sì', 'xīng qī sì'], spanish_spelling: ['jueves'], tags: ['día de la semana']
+		id_: 48, pinyin_spelling: ['lǐ bài wǔ', 'xīng qī wǔ'], spanish_spelling: ['viernes'], tags: ['día de la semana']
+		id_: 49, pinyin_spelling: ['lǐ bài liù', 'xīng qī liù'], spanish_spelling: ['sábado'], tags: ['día de la semana']
+		id_: 50, pinyin_spelling: ['lǐ bài tiān', 'xīng qī tiān'], spanish_spelling: ['domingo'], tags: ['día de la semana']
+		id_: 51, pinyin_spelling: ['yī yuè'], spanish_spelling: ['enero'], tags: ['mes']
+		id_: 52, pinyin_spelling: ['èr yuè'], spanish_spelling: ['febrero'], tags: ['mes']
+		id_: 53, pinyin_spelling: ['sān yuè'], spanish_spelling: ['marzo'], tags: ['mes']
+		id_: 54, pinyin_spelling: ['sì yuè'], spanish_spelling: ['abril'], tags: ['mes']
+		id_: 55, pinyin_spelling: ['wǔ yuè'], spanish_spelling: ['mayo'], tags: ['mes']
+		id_: 56, pinyin_spelling: ['liù yuè'], spanish_spelling: ['junio'], tags: ['mes']
+		id_: 57, pinyin_spelling: ['qī yuè'], spanish_spelling: ['julio'], tags: ['mes']
+		id_: 58, pinyin_spelling: ['bā yuè'], spanish_spelling: ['agosto'], tags: ['mes']
+		id_: 59, pinyin_spelling: ['jiǔ yuè'], spanish_spelling: ['septiembre'], tags: ['mes']
+		id_: 60, pinyin_spelling: ['shí yuè'], spanish_spelling: ['octubre'], tags: ['mes']
+		id_: 61, pinyin_spelling: ['shí yī yuè'], spanish_spelling: ['noviembre'], tags: ['mes']
+		id_: 62, pinyin_spelling: ['shí èr yuè'], spanish_spelling: ['diciembre'], tags: ['mes']
+		No more words
+Session finished at 2023-03-05 12:36:30.029274
