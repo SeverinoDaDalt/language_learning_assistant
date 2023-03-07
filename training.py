@@ -70,6 +70,7 @@ def exhaustive_training(words: List[Word], commentaries: List[str]):
     interactions = []
     wrong = []
     helped = []
+    correct = []
     repeated_tags = set()
     for word in words:
         # check if word should be skipped
@@ -92,12 +93,14 @@ def exhaustive_training(words: List[Word], commentaries: List[str]):
             wrong.append(word)
         elif result == "helped":
             helped.append(word)
+        elif result == "correct":
+            correct.append(word)
         commentary = random_commentary(commentaries, probability=commentaries_probability)
         if commentary is not None:
             print(f"\nQUICK NOTE:\n{commentary}\n")
             commentaries.remove(commentary)
     # resume
-    prompt = f"Correctly guessed {len(words)-len(wrong)-len(helped)} words out of {len(words)}."
+    prompt = f"Correctly guessed {len(correct)} words out of {len(correct) + len(wrong) + len(helped)}."
     print(prompt)
     if not wrong + helped:
         print("PERFECT SCORE!")
