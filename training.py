@@ -62,7 +62,7 @@ def random_commentary(commentaries, probability=0.1):
 def exhaustive_training(words: List[Word], commentaries: List[str]):
     # training parameters
     do_shuffle = True
-    commentaries_probability = 0.1
+    commentaries_probability = 0.05
     repetitive_tags = {"día de la semana", "mes"}
     # begin training
     if do_shuffle:

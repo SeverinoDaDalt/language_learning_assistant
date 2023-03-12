@@ -1,0 +1,5 @@
+Beginning of session 2023-03-12 17:24:59.205231
+	Entered debug mode at 2023-03-12 17:25:00.353393
+		Commentary: Added pinyin spelling for words "mucho" (id = 20) and "poco" (id = 21)
+	Exited debug mode at 2023-03-12 17:37:15.017345
+Session finished at 2023-03-12 17:37:20.192859

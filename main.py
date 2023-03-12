@@ -1,5 +1,5 @@
 import datetime
-import pdb
+import code
 from words import Dictionary
 import os
 import pickle
@@ -91,10 +91,10 @@ class Session:
         self.add_interaction(new_interactions)
         print(f"Training session finished!")
 
-    def exit(self):
-        print("DEBUG MODE! (When you are done type 'continue')")
+    def debug(self):
+        print("DEBUG MODE! (When you are done type 'ctrl + d')")
         self.add_interaction(f"Entered debug mode at {datetime.datetime.now()}", 1)
-        pdb.set_trace()
+        code.interact(local=dict(globals(), **locals()))
         need_description = ask_user(prompts.DEBUG_MODE_ASK_DESCRIPTION, valid_responses=["y", "n"])
         if need_description == "y":
             debug_description = ask_user(prompts.DEBUG_MODE_DESCRIPTION)
@@ -125,7 +125,7 @@ class Session:
             elif response == "4":
                 self.train()
             elif response == "6":
-                self.exit()
+                self.debug()
             else:
                 raise ValueError
         print("Session ended!")

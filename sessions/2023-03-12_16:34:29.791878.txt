@@ -1,0 +1,12 @@
+Beginning of session 2023-03-12 16:34:29.791878
+	Checked dictionary
+	Adding words
+		id_: 63, pinyin_spelling: ['líng'], spanish_spelling: ['zero'], tags: ['numeros']
+		id_: 64, pinyin_spelling: ['nián'], spanish_spelling: ['año'], tags: None
+		id_: 65, pinyin_spelling: ['piào liang'], spanish_spelling: ['guapa'], tags: None
+		id_: 66, pinyin_spelling: ['chǒu'], spanish_spelling: ['fea'], tags: None
+		id_: 67, pinyin_spelling: ['shì'], spanish_spelling: ['ser'], tags: None
+		id_: 68, pinyin_spelling: ['shì'], spanish_spelling: ['sí'], tags: None
+		id_: 69, pinyin_spelling: ['bù'], spanish_spelling: ['no'], tags: None
+		No more words
+Session finished at 2023-03-12 17:14:15.954559
