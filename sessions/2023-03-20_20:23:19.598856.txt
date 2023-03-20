@@ -1,0 +1,28 @@
+Beginning of session 2023-03-20 20:23:19.598856
+	Adding words
+		id_: 70, pinyin_spelling: ['wǒ'], spanish_spelling: ['yo'], tags: None
+		id_: 71, pinyin_spelling: ['nǐ'], spanish_spelling: ['tu'], tags: None
+		id_: 72, pinyin_spelling: ['tā'], spanish_spelling: ['él/ella'], tags: None
+		id_: 73, pinyin_spelling: ['shàng'], spanish_spelling: ['arriba'], tags: ['posición']
+		id_: 74, pinyin_spelling: ['xià'], spanish_spelling: ['abajo'], tags: ['posición']
+		id_: 75, pinyin_spelling: ['zhōng'], spanish_spelling: ['centro'], tags: ['posición']
+		id_: 76, pinyin_spelling: ['zuǒ'], spanish_spelling: ['izquieerda'], tags: ['posición']
+		id_: 77, pinyin_spelling: ['yòu'], spanish_spelling: ['derecha'], tags: ['posición']
+		id_: 78, pinyin_spelling: ['lái'], spanish_spelling: ['venir'], tags: ['movimiento']
+		id_: 79, pinyin_spelling: ['qù'], spanish_spelling: ['ir'], tags: ['movimiento']
+		id_: 80, pinyin_spelling: ['chū qù'], spanish_spelling: ['salir'], tags: ['movimiento']
+		id_: 81, pinyin_spelling: ['rù qù'], spanish_spelling: ['entrar'], tags: ['movimiento']
+		id_: 82, pinyin_spelling: ['chū kǒu'], spanish_spelling: ['salida'], tags: None
+		id_: 83, pinyin_spelling: ['rù kǒu'], spanish_spelling: ['entrada'], tags: None
+		id_: 84, pinyin_spelling: ['zuò'], spanish_spelling: ['sentarse'], tags: ['movimiento']
+		id_: 85, pinyin_spelling: ['lì'], spanish_spelling: ['estar derecho'], tags: ['movimiento']
+		id_: 86, pinyin_spelling: ['zǒu'], spanish_spelling: ['caminar'], tags: ['movimiento']
+		id_: 87, pinyin_spelling: ['chū rù kǒu'], spanish_spelling: ['entrada y salida'], tags: None
+		id_: 88, pinyin_spelling: ['tiān tiān'], spanish_spelling: ['todos los días'], tags: None
+		id_: 89, pinyin_spelling: ['jīn tiān'], spanish_spelling: ['hoy'], tags: None
+		id_: 90, pinyin_spelling: ['míng tiān'], spanish_spelling: ['mañana'], tags: None
+		No more words
+	Entered debug mode at 2023-03-20 21:02:26.943731
+		Commentary: corrected word typo (id_: 76 ... izquieerda -> izquierda)
+	Exited debug mode at 2023-03-20 21:05:18.906889
+Session finished at 2023-03-20 21:05:21.722135
